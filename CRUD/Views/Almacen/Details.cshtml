@@ -1,0 +1,58 @@
+﻿@model CRUD.Models.Almacen
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Almacen</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AlmacenDescripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlmacenDescripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Decimal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Decimal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AlmacenID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
